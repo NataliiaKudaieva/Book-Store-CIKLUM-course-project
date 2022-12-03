@@ -1,0 +1,15 @@
+{
+  "name": "book-store-ciklum-course-project",
+  "version": "1.0.0",
+  "description": "Course Project Ciklum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CIKLUM-BookStore-project"
+  },
+  "author": "Nataliia Kudaieva",
+  "license": "ISC"
+}

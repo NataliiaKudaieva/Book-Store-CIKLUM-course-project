@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.signin {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+.signin__container {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signin__img {
+  border: 2px solid #eee;
+  width: 160px;
+  height: 160px;
+  border: 1px solid #000;
+}
+.signin__label {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 17px;
+}
+.signin__username {
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 25px;
+}
+.signin__input::-moz-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin__input:-ms-input-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin__input::placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signin__btn {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 0px;
+  cursor: pointer;
+}
+
+#wrapper {
+  width: 1180px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border: 1px solid #000;
+}
+.header__heading {
+  padding-left: 20px;
+}/*# sourceMappingURL=main.css.map */

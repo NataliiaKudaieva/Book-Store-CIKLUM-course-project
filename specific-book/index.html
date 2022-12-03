@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Band Store</title>
+    <link rel="stylesheet" href="./scss/main.css" />
+  </head>
+  <body>
+    <section class="specific">
+      <header class="specific__header header">
+        <nav class="header__nav nav">
+          <h1 class="nav__heading">JS BAND STORE/Your full name</h1>
+          <div class="nav__user--info">
+            <a href="#" class="nav__link">
+              <object
+                data="./src/cart.svg"
+                type="image/svg+xml"
+                class="nav__icon"
+              ></object>
+            </a>
+            <button class="nav__btn">Sign-Out</button>
+            <a href="#" class="nav__link">
+              <object
+                data="./src/user.svg"
+                type="image/svg+xml"
+                class="nav__icon"
+              ></object>
+            </a>
+            <span class="nav__username">Username</span>
+          </div>
+        </nav>
+      </header>
+      <div class="specific__container">
+        <div class="specific__desc">
+          <img src="./src/image.png" alt="" class="specific__img" />
+          <p class="specific__text">Book description</p>
+          <div class="specific__book--info book__info">
+            <span class="book__info--name">Book name</span>
+            <span class="book__info--name">Book name</span>
+            <span class="book__info--author">Book author</span>
+            <span class="book__info--level">Book level</span>
+            <span class="book__info--tags">Book tags</span>
+            <span class="book__info--tags">Book tags</span>
+          </div>
+        </div>
+        <div class="specific__price price">
+          <span class="price__span">17</span>
+          <input type="number" class="specific__input" />
+          <span class="price__total">51</span>
+          <button class="price__btn">Add to cart</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

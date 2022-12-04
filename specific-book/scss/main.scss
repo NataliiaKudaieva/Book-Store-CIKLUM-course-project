@@ -19,10 +19,14 @@
   &__img {
     max-width: 100%;
   }
+  &__text {
+    flex: 0 1 100%;
+  }
   &__desc {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 
@@ -64,6 +68,9 @@
 }
 
 .book__info {
+  display: flex;
+  flex-direction: column;
+
   &--name {
     font-weight: bold;
     font-size: 16px;
@@ -73,8 +80,49 @@
     font-weight: 400;
     display: block;
   }
+  flex-wrap: nowrap;
 }
 
 .book__info::nth-child(2n + 1) {
   margin: 15px;
+}
+
+.price {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border: 1px dotted #000;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  * {
+    display: block;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0 auto;
+  }
+  &__input--number {
+    width: 50px;
+  }
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    bottom: 10px;
+    align-self: flex-end;
+    font-weight: inherit;
+    padding: 7px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #000;
+  }
 }

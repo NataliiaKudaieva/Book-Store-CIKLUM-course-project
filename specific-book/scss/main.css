@@ -20,10 +20,14 @@
 .specific__img {
   max-width: 100%;
 }
+.specific__text {
+  flex: 0 1 100%;
+}
 .specific__desc {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .nav {
@@ -61,6 +65,11 @@
   font-size: 16px;
 }
 
+.book__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 .book__info--name {
   font-weight: bold;
   font-size: 16px;
@@ -72,4 +81,44 @@
 
 .book__info::nth-child(2n + 1) {
   margin: 15px;
+}
+
+.price {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  border: 1px dotted #000;
+  justify-content: flex-start;
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.price * {
+  display: block;
+}
+.price__item {
+  display: flex;
+  justify-content: space-between;
+}
+.price__input {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0 auto;
+}
+.price__input--number {
+  width: 50px;
+}
+.price__btn {
+  cursor: pointer;
+  position: absolute;
+  bottom: 10px;
+  align-self: flex-end;
+  font-weight: inherit;
+  padding: 7px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #000;
 }/*# sourceMappingURL=main.css.map */

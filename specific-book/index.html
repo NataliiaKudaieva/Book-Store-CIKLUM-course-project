@@ -35,7 +35,6 @@
       <div class="specific__container">
         <div class="specific__desc">
           <img src="./src/image.png" alt="" class="specific__img" />
-          <p class="specific__text">Book description</p>
           <div class="specific__book--info book__info">
             <span class="book__info--name">Book name</span>
             <span class="book__info--name">Book name</span>
@@ -44,11 +43,26 @@
             <span class="book__info--tags">Book tags</span>
             <span class="book__info--tags">Book tags</span>
           </div>
+          <p class="specific__text">Book description</p>
         </div>
+
         <div class="specific__price price">
-          <span class="price__span">17</span>
-          <input type="number" class="specific__input" />
-          <span class="price__total">51</span>
+          <div class="price__item">
+            <span class="price__currency">Price, $</span>
+            <span class="price__value">17</span>
+          </div>
+          <div class="price__input">
+            <label for="price__input--id">Count</label>
+            <input
+              type="number"
+              class="price__input--number"
+              id="price__input--id"
+            />
+          </div>
+          <div class="price__item">
+            <span class="price__total">Total</span>
+            <span class="price__total--value">51</span>
+          </div>
           <button class="price__btn">Add to cart</button>
         </div>
       </div>

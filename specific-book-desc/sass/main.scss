@@ -1,0 +1,52 @@
+.nav {
+  &__icon {
+    width: 25px;
+    height: 25px;
+  }
+  &__link {
+    text-decoration: none;
+  }
+
+  &__username {
+    margin-left: 30px;
+  }
+}
+
+.book {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  &__description {
+    &--span {
+      font-weight: bold;
+    }
+  }
+}
+
+.book__info {
+  &--id {
+    font-weight: bold;
+    display: inline-block;
+  }
+  &--id:nth-child(2n + 1) {
+    margin: 5px 3px;
+  }
+}
+
+.price {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  &__count {
+    margin: 10px 0;
+    display: block;
+  }
+
+  &__button {
+    margin-top: 10px;
+    display: block;
+    padding: 5px 20px;
+  }
+}

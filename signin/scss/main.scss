@@ -16,7 +16,7 @@
   align-items: center;
   position: absolute;
   &__container {
-    width: 320px;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,18 +34,17 @@
     font-size: 17px;
   }
   &__username {
-    width: 100%;
+    width: 200px;
     border-radius: 5px;
     height: 40px;
     margin-bottom: 25px;
   }
-  &__input::placeholder {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  &__username::placeholder {
+    padding-left: 8px;
   }
+
   &__btn {
-    width: 100%;
+    width: 200px;
     border-radius: 5px;
     padding: 10px 0px;
     cursor: pointer;
@@ -70,5 +69,24 @@
   border: 1px solid #000;
   &__heading {
     padding-left: 20px;
+  }
+}
+
+//////MEDIA QUERIES
+
+@media screen and (max-width: 320px) {
+  .signin {
+    &__container {
+      width: 100%;
+      padding: 0 8px;
+    }
+    &__img {
+      width: 200px;
+      height: 200px;
+    }
+    &__username,
+    &__btn {
+      width: 100%;
+    }
   }
 }

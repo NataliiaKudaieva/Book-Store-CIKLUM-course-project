@@ -1,13 +1,31 @@
-/////reset
+@font-face {
+  font-family: "Lora";
+  src: url(fonts/Lora-Medium.ttf);
+}
+
+///COLOR FOR FONTS
+$primary--gray: #3b4342;
+$gray--medium: #9b9b9b;
+$pink: #f7eff8;
+
+////BACKGROUND COLORS
+$primary--blue: #05386b;
+$green--dull: #379683;
+$primary--green: #5cdb95;
+$secondary--green: #8ee4af;
+$beige: #edf5e1;
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+
+  font-family: "Lora-Medium";
 }
 
 .signin {
+  background: rgb(174, 238, 227);
+  background: radial-gradient(ellipse, $beige 15%, $primary--blue 100%);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -21,37 +39,70 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
   &__img {
     border: 2px solid #eee;
     width: 160px;
     height: 160px;
-    border: 1px solid #000;
+    border: 1px solid $gray--medium;
   }
-  &__label {
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 17px;
-  }
-  &__username {
+
+  &__input {
     width: 200px;
-    border-radius: 5px;
     height: 40px;
     margin-bottom: 25px;
+    border: 0;
+    font-size: 14px;
+    border-bottom: 2px solid $gray--medium;
+    outline: 0;
+    background: transparent;
+    color: $primary--blue;
   }
-  &__username::placeholder {
+  &__input::placeholder {
     padding-left: 8px;
+    opacity: 1;
+    color: $primary--blue;
+  }
+
+  &__input:focus {
+    font-weight: 700;
+  }
+
+  &__label {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: absolute;
+    font-size: 14px;
+    top: 180px;
+    left: -90px;
+    color: $primary--blue;
   }
 
   &__btn {
     width: 200px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     border-radius: 5px;
+    border: 1px solid $primary--blue;
+    background-color: $beige;
+    outline: 0;
     padding: 10px 0px;
     cursor: pointer;
+    transition: all ease 0.2s;
+    color: $primary--blue;
+  }
+
+  &__btn:hover {
+    transform: scale(1.05);
+    background-color: $primary--blue;
+    color: $beige;
   }
 }
+
 #wrapper {
-  width: 1180px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -74,11 +125,14 @@
 
 //////MEDIA QUERIES
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .signin {
     &__container {
       width: 100%;
       padding: 0 8px;
+    }
+    &__label {
+      display: none;
     }
     &__img {
       width: 200px;

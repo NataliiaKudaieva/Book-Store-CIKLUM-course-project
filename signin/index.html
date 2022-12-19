@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Band Store</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <section class="signin">
@@ -15,13 +21,16 @@
         </header>
         <div class="signin__container">
           <img src="./src/user.png" alt="user pic" class="signin__img" />
-          <label for="signin__username" class="signin__label">Username:</label>
-          <input
-            type="text"
-            class="signin__input"
-            id="signin__username"
-            required
-          />
+          <div class="signin__block">
+            <input
+              type="text"
+              class="signin__input"
+              id="signin__username"
+              required
+              placeholder=" "
+            />
+            <label for="signin__username" class="signin__label">Username</label>
+          </div>
           <button class="signin__btn" type="submit">Sign-In</button>
         </div>
       </div>

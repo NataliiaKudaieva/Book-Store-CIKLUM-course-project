@@ -1,21 +1,87 @@
+///COLOR FOR FONTS
+$primary--gray: #3b4342;
+$gray--medium: #9b9b9b;
+$pink: #f7eff8;
+
+////BACKGROUND COLORS
+$brown--dark: #3c2b23;
+$brown--medium: #a78c70;
+$beige: #f2eeea;
+$blue--primary: #31415b;
+$blue--secondary: #708ba7;
+$white: #fff;
+
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  color: $beige;
+}
+
 .nav {
+  background-color: $brown--dark;
+  width: 100%;
+  padding: 8px;
+
   &__icon {
-    width: 25px;
-    height: 25px;
+    width: 35px;
+    height: 35px;
+    flex: 1;
+    display: inline-block;
   }
   &__link {
     text-decoration: none;
+    flex: 0;
   }
 
+  &__user--info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
   &__username {
-    margin-left: 30px;
+    display: inline-block;
+  }
+  &__btn {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    background-color: $beige;
+    font-weight: 400;
+    font-size: 14px;
+    outline: 0;
+    border: 0;
+    border-radius: 10px;
+    text-shadow: $brown--medium 2px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    transform: scaleX(1.05);
   }
 }
 
 .book {
-  height: 80vh;
+  height: auto;
   display: flex;
+  padding: 20px 15px;
   flex-direction: column;
+  color: $brown--dark;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__description {
     &--span {
       font-weight: bold;
@@ -24,6 +90,8 @@
 }
 
 .book__info {
+  padding: 0 15px;
+  flex: 1;
   &--id {
     font-weight: bold;
     display: inline-block;
@@ -39,14 +107,37 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   &__count {
     margin: 10px 0;
     display: block;
+    border-radius: 10px;
+    width: 40px;
+    padding: 10px;
+    border-color: $brown--dark;
+    color: $brown--dark;
+    font-size: 15px;
+    font-weight: 400;
   }
 
-  &__button {
+  &__btn {
+    background-color: $brown--dark;
+    color: $beige;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: 0;
+    font-size: 14px;
+    border-radius: 12px;
     margin-top: 10px;
     display: block;
-    padding: 5px 20px;
+    padding: 8px 25px;
+    transition: all 0.2s ease-in-out;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    font-weight: 600;
+    transform: scale(1.05);
+    background-color: $beige;
+    color: $brown--dark;
   }
 }

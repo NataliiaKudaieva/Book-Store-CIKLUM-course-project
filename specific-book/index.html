@@ -6,42 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS Band Store</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <header class="header">
+      <nav class="header__nav nav">
+        <h1 class="nav__heading">JS BAND STORE/Your full name</h1>
+        <div class="nav__user--info">
+          <a href="#" class="nav__link">
+            <object
+              data="./src/cart.svg"
+              type="image/svg+xml"
+              class="nav__icon"
+            ></object>
+          </a>
+          <button class="nav__btn">Sign-Out</button>
+          <a href="#" class="nav__link">
+            <object
+              data="./src/user.svg"
+              type="image/svg+xml"
+              class="nav__icon"
+            ></object>
+          </a>
+          <span class="nav__username">Username</span>
+        </div>
+      </nav>
+    </header>
+
     <section class="specific">
-      <header class="specific__header header">
-        <nav class="header__nav nav">
-          <h1 class="nav__heading">JS BAND STORE/Your full name</h1>
-          <div class="nav__user--info">
-            <a href="#" class="nav__link">
-              <object
-                data="./src/cart.svg"
-                type="image/svg+xml"
-                class="nav__icon"
-              ></object>
-            </a>
-            <button class="nav__btn">Sign-Out</button>
-            <a href="#" class="nav__link">
-              <object
-                data="./src/user.svg"
-                type="image/svg+xml"
-                class="nav__icon"
-              ></object>
-            </a>
-            <span class="nav__username">Username</span>
-          </div>
-        </nav>
-      </header>
       <div class="specific__container">
         <div class="specific__desc">
           <img src="./src/image.png" alt="" class="specific__img" />
           <div class="specific__book--info book__info">
-            <span class="book__info--name">Book name</span>
-            <span class="book__info--name">Book name</span>
-            <span class="book__info--author">Book author</span>
-            <span class="book__info--level">Book level</span>
-            <span class="book__info--tags">Book tags</span>
-            <span class="book__info--tags">Book tags</span>
+            <span class="book__info--name">Book name:</span>
+            <span class="book__info--name">Book name:</span>
+            <span class="book__info--author">Book author:</span>
+            <span class="book__info--level">Book level:</span>
+            <span class="book__info--tags">Book tags:</span>
+            <span class="book__info--tags">Book tags:</span>
           </div>
           <p class="specific__text">Book description</p>
         </div>
